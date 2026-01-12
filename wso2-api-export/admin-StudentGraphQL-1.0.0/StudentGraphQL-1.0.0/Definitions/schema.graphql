@@ -1,0 +1,12 @@
+type Student {
+  id: ID!
+  name: String!
+  course: String!
+}
+
+type Query {
+  students: [Student]
+}
+
+"Indicates exactly one field must be supplied and this field must not be `null`."
+directive @oneOf on INPUT_OBJECT
